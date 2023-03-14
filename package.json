@@ -1,0 +1,20 @@
+{
+  "name": "apis-node-express",
+  "version": "1.0.0",
+  "description": "HTTP: é um protocolo que define as regras de comunicação entre cliente e servidor na internet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CrisMai/APIs-node-express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CrisMai/APIs-node-express/issues"
+  },
+  "homepage": "https://github.com/CrisMai/APIs-node-express#readme"
+}
