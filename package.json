@@ -4,6 +4,7 @@
   "description": "HTTP: é um protocolo que define as regras de comunicação entre cliente e servidor na internet.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/CrisMai/APIs-node-express/issues"
   },
-  "homepage": "https://github.com/CrisMai/APIs-node-express#readme"
+  "homepage": "https://github.com/CrisMai/APIs-node-express#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
