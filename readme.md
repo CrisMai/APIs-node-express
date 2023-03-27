@@ -52,4 +52,13 @@ Regular Expression: Utilizado para expressões regulares, representadas por cara
 Code: Utilizado para armazenar códigos em JavaScript dentro do documento.
 
 
+Mongoose
+
+Mongoose é uma biblioteca do Node.js que fornece uma solução baseada em esquemas para modelagem de dados 
+em bancos de dados NoSQL, especificamente o MongoDB. Ele permite definir esquemas de dados, criar modelos 
+e executar operações de banco de dados, como inserção, busca, atualização e remoção de dados. 
+Com o Mongoose, é possível estabelecer relações entre os dados e definir validações para garantir 
+a integridade dos dados.
+
+
 
