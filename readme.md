@@ -61,4 +61,15 @@ Com o Mongoose, é possível estabelecer relações entre os dados e definir val
 a integridade dos dados.
 
 
+.Dotenv
+
+O Dotenv é um pacote que serve para gerenciar as variáveis de ambiente dentro de um projeto Node.js. 
+Essa ferramenta armazena a configuração dessas variáveis em um ambiente separado do código da aplicação.
+
+
+ESLint
+
+O ESLint nos ajuda a manter a padronização de formatação de arquivos. 
+Além disso, a extensão ESLint alerta sobre erros de código que normalmente não seriam alertados, 
+auxiliando nosso desenvolvimento.
 
