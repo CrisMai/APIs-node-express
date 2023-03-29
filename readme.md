@@ -73,3 +73,13 @@ O ESLint nos ajuda a manter a padronização de formatação de arquivos.
 Além disso, a extensão ESLint alerta sobre erros de código que normalmente não seriam alertados, 
 auxiliando nosso desenvolvimento.
 
+
+Middleware
+
+Middleware é um termo técnico utilizado para essas funções especiais que passamos para esse método do app.use.
+Os middlewares são funções que, basicamente, interceptam alguma ação; mais especificamente, interceptam 
+alguma requisição feita para a nossa API.
+A palavra "middle" significa "meio" em inglês. É como se essa função entrasse no meio de uma ação e a 
+interceptasse de alguma forma. 
+Middleware de manipulador de erros é caracterizado por receber quatro parâmetros que chamamos de: erro, req, res e next.
+
