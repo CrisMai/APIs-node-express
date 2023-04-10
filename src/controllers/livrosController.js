@@ -6,17 +6,21 @@ class LivroController {
 
   static listarLivros = async (req, res, next) => {
     try {
-      let {limite = 5, pagina = 1} = req.query;
+      let {limite = 5, pagina = 1, ordenacao = "_id:-1"} = req.query;
+
+      let [campoOrdenacao, ordem] = ordenacao.split(":");
 
       limite = parseInt(limite);
       pagina = parseInt(pagina);
+      ordem = parseInt(ordem);
 
       if(limite > 0 && pagina > 0) {
         const livrosResultado = await livros.find()
-         .skip((pagina - 1) * limite)
-         .limit(limite)
-         .populate("autor")
-         .exec();
+          .sort({[campoOrdenacao] : ordem})
+          .skip((pagina - 1) * limite)
+          .limit(limite)
+          .populate("autor")
+          .exec();
 
         res.status(200).json(livrosResultado);
       }
@@ -97,10 +101,10 @@ class LivroController {
 
       if(busca !== null) {
         const livrosResultado = await livros
-      .find(busca)
-      .populate("autor");
+          .find(busca)
+          .populate("autor");
 
-      res.status(200).send(livrosResultado);
+        res.status(200).send(livrosResultado);
       }
       else {
         res.status(200).send([]);
@@ -135,10 +139,7 @@ async function processaBusca(parametros) {
     }
     else {
       busca = null;
-    }
-
-    
-    
+    } 
   }
 
   return busca;
