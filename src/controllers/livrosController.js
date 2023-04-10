@@ -19,9 +19,9 @@ class LivroController {
     try {
       const id = req.params.id;
 
-      const livroResultado = await livros.findById(id)
-        .populate("autor", "nome")
-        .exec();
+      const livroResultado = await livros
+        .findById(id, {}, {autopopulate: false})
+        .populate("autor");
 
       if (livroResultado !== null) {
         res.status(200).send(livroResultado);
